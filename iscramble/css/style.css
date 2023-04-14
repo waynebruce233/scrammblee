@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:required:invalid,
+textarea:required:invalid {
+  border-color: red;
+}
+
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button#register-btn {
+  background-color: #008CBA;
+}
+
+button#start-btn {
+  background-color: #f44336;
+}
+
+button#accept-btn {
+  background-color: #4CAF50;
+}
+
+button#next-btn {
+  background-color: #f44336;
+}
+
+button#end-btn {
+  background-color: #008CBA;
+}
+
+#game-area {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#scrambled-word {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#answer,
+#results,
+#showallplayers,
+#showpercentage {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  resize: none;
+}
+
+#showallplayers,
+#showpercentage {
+  height: 100px;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+

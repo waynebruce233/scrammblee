@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head><head>
+	<title>ISCRAMBLE</title>
+  <link rel="stylesheet" href="css/style.css">
+	<script src="playgame/startgame1.js"></script>
+</head>
+<body>
+	<h1>ISCRAMBLE</h1>
+	<form id="player-form">
+		<label for="first-name">First Name:</label>
+		<input type="text" id="first-name" name="first-name" required minlength="3" unique>
+
+		<label for="last-name">Last Name:</label>
+		<input type="text" id="last-name" name="last-name" required minlength="3" unique>
+
+
+    <label for="dob">DOB:</label>
+		<input type="date" id="dob" name="dob" required onchange="calculateAge()"><br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required min="8" max="12"><br>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required pattern=".*@gmail\.com$" unique>
+
+		<button type="button" id="register-btn" onclick="Register()" enabled>Register</button>
+		<button type="button" id="start-btn" onclick="PlayGame()" disabled>Start</button>
+		<button type="button" id="accept-btn" onclick="CheckAnswer()" disabled>Accept</button>
+		<button type="button" id="next-btn" onclick="PlayGame()" disabled>Next</button>
+		<button type="button" id="end-btn" onclick="findPercentageScore();" disabled>End</button>
+
+
+		<div>
+			<label for="game-area">Unscramble this word:</label>
+			<input type="text" id="game-area" name="game-area" disabled>
+      <div id="scrambled-word"></div> <!-- add the id "scrambled-word" here -->	
+		</div>
+    
+
+		<div>
+			<label for="answer">Answer:</label>
+			<input type="text" id="answer" name="answer" required disabled>
+		</div>
+
+
+
+		<div>
+			<label for="showallplayers">All Players:</label>
+			<textarea id="showallplayers" name="showallplayers" disabled></textarea>
+		</div>
+
+		<div>
+			<label for="showpercentage">Percentage Score:</label>
+			<textarea id="showpercentage" name="showpercentage" disabled></textarea>
+		</div>
+	</form>
+  
+</body>
+</html>
+
+
